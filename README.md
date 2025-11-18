@@ -2,4 +2,4 @@
 ## Проект
 Этот репозиторий является каркасом для будущего веб-приложения.
 ## Ссылки
-- [Публичная страница на GitHub Pages](https://2pac_shampur22.github.io/dpo_mirea/)
+- [Публичная страница на GitHub Pages](https://2pacshampur22.github.io/dpo_mirea/)
