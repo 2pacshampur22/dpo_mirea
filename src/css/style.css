@@ -6,6 +6,17 @@
     font-display: swap;
 }
 
+html, body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Inter', system-ui, sans-serif;
     color: #5a5858;
@@ -315,10 +326,11 @@ a {
 
 .footer {
     text-align: center;
-    padding: 30px 0;
+    padding: 30px 20px;
     background-color: #5a5858;
     color: #ffffff;
     font-size: 14px;
+    box-sizing: border-box;
 }
 
 
@@ -429,26 +441,80 @@ a {
     }
 }
 
-@media (max-width: 399px) {
-    
+@media (max-width: 440px) {
+
     .section {
-        padding: 40px 15px;
-        max-width: 400px;
-        width:100%
-
+        padding: 40px 10px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
-
 
     .header {
-        font-size: 18px;
-        width: 100%;
-
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 15px;
     }
     .page-title {
-        font-size: 16px;
+        text-align: center;
+        font-size: 24px;
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
     }
+
+    .main-nav__list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-nav__list {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        margin-top: 15px;
+    }
+
     .giftset-card {
-        width: 1fr;
+        flex-direction: column;
+        align-items: center;   
+        text-align: center;     
+        width: 100%;
+        max-width: 320px;
+        margin: 0 auto;
+        padding: 20px 10px;
+    }
+
+    .giftset-card__img {
+        width: 80%;
+        margin: 0 auto 20px auto;
+    }
+
+    .giftset-card__info-list {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        border-bottom: none;
+    }
+
+    .giftset-card__actions {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .product-choice,
+    .combo-choice {
+        grid-template-columns: 1fr; 
+        justify-items: center;
+        width: 100%;
+    }
+
+    .product-card {
+        width: 100%;
+        max-width: 290px;
+        margin: 0 auto;
     }
 
     .feature-list {
@@ -457,57 +523,14 @@ a {
     }
 
     .feature-item {
-        max-width: 400px;
-        width: 100%;
-    }
-
-    .section__header {
-        font-size: 16px;
-        max-width: 400px;
-        width: 100%;
         text-align: center;
-        
+        max-width: 280px;
+        margin-bottom: 30px;
     }
 
-    .main-nav__list {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .giftset-card__description {
-        font-size: 13px;
-    }
-    .giftset-card__img {
-        width: 45%;
-    }
-    .giftset-card__info-list {
-        flex-direction: column;
-        gap: 15px;
-    }
-    .giftset-card__info-item {
-        font-size: 13px;
-    }
-
-    .giftset-card__title {
-        font-size: 18px;
-        text-align: center;
-    }
-    .giftset-card__price {
-        font-size: 22px;
-    }
-    .product-choice,
-    .combo-choice {
-        gap: 20px;
-        grid-template-columns: 1fr;
-    }
-    .giftset-card__price {
-        text-align: center;
-    }
-
-    .product-card {
-        width: 1fr;
-    }
     .footer {
-        width: 92%;
+        width: 100%;
+        text-align: center;
+        box-sizing: border-box;
     }
 }
