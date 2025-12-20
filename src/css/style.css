@@ -441,7 +441,7 @@ a {
     }
 }
 
-@media screen and (max-width: 440px) {
+@media (max-width: 440px) {
 
     .section {
         padding: 40px 10px;
