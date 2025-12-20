@@ -500,6 +500,9 @@ a {
         gap: 20px;
         grid-template-columns: 1fr;
     }
+    .giftset-card__price {
+        text-align: center;
+    }
 
     .product-card {
         width: 1fr;
